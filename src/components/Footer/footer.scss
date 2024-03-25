@@ -1,0 +1,29 @@
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer__box {
+    display: flex;
+    flex-direction: column;
+    margin: 66px 33% 29px 33%;
+    align-items: center;
+    gap: 28.56px;
+
+    p {
+        color: #FFF;
+    }
+
+    &.footer__logo--color {
+        color: white;
+    }
+
+    &.footer__logo--size {
+        width: 122px;
+        height: 39.444px;
+    }
+}

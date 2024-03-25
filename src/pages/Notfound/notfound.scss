@@ -1,0 +1,28 @@
+.notfound__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 139px;
+}
+
+.notfound__main h1 {
+    color: #FF6060;
+    font-size: 288px;
+    font-weight: 700;
+    position: inherit;
+}
+
+.notfound__main h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.link__notfound {
+    font-family: Montserrat;
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}

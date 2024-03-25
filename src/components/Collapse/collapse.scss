@@ -1,0 +1,88 @@
+.collapse__container {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    & .collapse__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FF6060;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 20px 10px 15px;
+
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.collapse__content {
+    border-radius: 5px;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    overflow: hidden;
+}
+
+.collapse__txt {
+    height: 100%;
+    padding: 15px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.chevron__icon {
+    width: 32px;
+    height: 32px;
+}
+
+.collapse__header:hover {
+    cursor: pointer;
+}
+
+.chevron__icon:hover {
+    cursor: pointer;
+}
+
+// ************** ANIMATIONS ****************//
+
+// ** animations des chevrons ** //
+// Ajout d'une transition pour l'effet d'animation 
+.chevron__rotate--open,
+.chevron__rotate--close {
+    transition: transform 0.3s ease-in-out;
+}
+
+// Rotation à 180 degrés du chevron vers le bas 
+.chevron__rotate--open {
+    transform: rotate(-180deg);
+}
+
+// ** animations du collapse ** //
+// ajout d'une transition pour l'effet d'animation //
+// Utilisation de max-height uniquement
+.collapse__content--reduce {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.collapse__content--expand {
+    max-height: 1000px;
+    transition: max-height 1.4s ease-in-out;
+}
+
+// effets de translation du texte //
+.collapse__txt--reduce {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.collapse__txt--expand {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}

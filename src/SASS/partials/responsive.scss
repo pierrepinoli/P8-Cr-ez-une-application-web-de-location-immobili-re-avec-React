@@ -1,0 +1,378 @@
+//*************************************** Responsive pour tablettes [768px;1024px] ********************************//
+
+@media screen and (max-width: 1023px) {
+
+    // *********** responsive général *********** //
+    h1 {
+        font-size: 30px;
+    }
+
+    // *********** responsive de la page d'acceuil *********** //
+    .banner {
+        height: 180px;
+    }
+
+    //passage à 2 colonnes 
+    .cards__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // *********** responsive du header *********** //
+    .header__logo--size {
+        width: 145px;
+        height: 46.881px;
+    }
+
+    .navbar ul {
+        gap: 38px;
+    }
+
+    .navbar__box--typography {
+        font-size: 18px;
+    }
+
+    // ************** responsive de la page housing **************** //
+    .title__box h2 {
+        font-size: 24px;
+    }
+
+    .section__housing {
+        & p {
+            font-size: 16px;
+        }
+    }
+
+    .slideshow {
+        height: 330px;
+    }
+
+    // passage a 3 colonnes //
+    .tag__grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        & .tag {
+            font-size: 12px;
+            border-radius: 5px;
+        }
+    }
+
+    .chevron__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .collapse__box {
+        padding-left: 0;
+        padding-right: 0;
+        gap: 20px;
+    }
+
+    .collapse__housing {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .collapse .collapse__header {
+        font-size: 16px;
+    }
+
+    .collapse__txt {
+        font-size: 14px;
+    }
+
+    .host__name p {
+        font-size: 14px;
+    }
+
+    .host__pictureprofile {
+        width: 48px;
+        height: 48px;
+    }
+
+    .arrow__box {
+
+        & .arrow {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    .starrating__box {
+        display: flex;
+        gap: 8px;
+    }
+
+    .filled-star {
+        width: 24px;
+        height: 24px;
+        color: #FF6060;
+    }
+
+    .empty-star {
+        width: 24px;
+        height: 24px;
+        color: #E3E3E3;
+    }
+
+    // *********** responsive de la page 404 *********** //
+    .notfound__main {
+        gap: 126px;
+    }
+
+    .notfound__main h1 {
+        font-size: 128px;
+    }
+
+    .notfound__main h2 {
+        font-size: 24px;
+    }
+}
+
+
+/********************************* Responsive pour smartphones [375px;768px[ **************************************/
+
+@media screen and (max-width: 767px) {
+
+    // *********** responsive général *********** //
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    h1 {
+        font-size: 24px;
+        overflow: initial;
+    }
+
+    // ********** responsive des composants ********** //
+
+    // ** responsive des cartes ** // 
+    //passage à 1 colonne
+    .cards__grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 22px;
+        // suppression du fond gris //
+        background-color: initial;
+        padding: 0;
+    }
+
+
+
+    .card {
+        height: 255px;
+    }
+
+    // ** responsive de la bannières ** //
+    .banner {
+        height: 111px;
+        border-radius: 10px;
+    }
+
+    // ** responsive des collapses ** //
+    .collapse__container {
+
+        & .collapse__header {
+            font-size: 13px;
+        }
+    }
+
+    .collapse__txt {
+        font-size: 12px;
+    }
+
+    // ** responsive du carrousel ** //
+    .slideshow {
+        height: 225px;
+    }
+
+    .slideshow__img {
+        border-radius: 10px;
+    }
+
+    .slideshow__counter {
+        display: none;
+    }
+
+    // *********** responsive du header *********** //
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .header--margin {
+        margin-bottom: 27px;
+    }
+
+    .navbar ul {
+        gap: 26px;
+        padding-left: 0;
+    }
+
+    .navbar__box {
+        padding-top: 20px;
+    }
+
+    .navbar__box--typography {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+
+    // ************ responsive du footer ************* //
+    .footer--margin {
+        margin-top: 27px;
+    }
+
+    .footer__box {
+        width: 134px;
+        gap: 0px;
+    }
+
+    .footer__copyright--size {
+        font-size: 12px;
+    }
+
+
+    // *********** responsive de la page d'acceuil *********** //
+    .banner__home {
+        align-items: flex-start;
+
+        h1 {
+            padding-left: 16px;
+        }
+    }
+
+    // force le retour a la ligne du banner__home h1 //
+    .mobile-break {
+        display: block;
+    }
+
+    .main__home {
+        gap: 22px;
+        padding-bottom: 5px;
+    }
+
+    // ********** responsive de la page housing *********** //
+    .title__box h2 {
+        font-size: 18px;
+    }
+
+    .tag__grid {
+
+        & .tag {
+            font-size: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    .tag__line .tag {
+        font-size: 10px;
+        border-radius: 5px;
+    }
+
+
+
+    .arrow__box .arrow {
+        width: 24px;
+        height: 24px;
+    }
+
+    .chevron__icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .collapse__housing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .section__housing {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & p {
+            font-size: 14px;
+        }
+    }
+
+    .host__container {
+        display: flex;
+        gap: 10px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .host__name p {
+        font-size: 12px;
+    }
+
+    .host__pictureprofile {
+        width: 32px;
+        height: 32px;
+    }
+
+    .starrating__box {
+        display: flex;
+        gap: 7px;
+    }
+
+    .filled-star {
+        width: 18px;
+        height: 18px;
+        color: #FF6060;
+    }
+
+    .empty-star {
+        width: 18px;
+        height: 18px;
+        color: #E3E3E3;
+    }
+
+    // *********** responsive de la page 404 *********** //
+    .notfound__main {
+        gap: 113px;
+    }
+
+    .notfound__main h1 {
+        font-size: 96px;
+    }
+
+    .notfound__main h2 {
+        font-size: 18px;
+    }
+}
+
+//*************************************** Responsive pour petits smartphones [0px;375px[ ********************************//
+
+@media screen and (max-width: 374px) {
+
+    // ** responsive du header ** //
+
+    .header__logo--size {
+        width: 87px;
+        height: 28.128px;
+    }
+
+    .navbar ul {
+        gap: 14px;
+        padding-left: 0;
+    }
+
+    .navbar__box--typography {
+        font-size: 10px;
+    }
+
+    // ** responsive de la page housing ** //
+    .tag__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // ** responsive de la page 404 ** //
+    .notfound__main {
+        gap: 68px;
+    }
+}

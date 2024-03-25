@@ -1,0 +1,25 @@
+.main__home {
+    gap: 43px;
+}
+
+.banner__home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// annulation de l'effet de retour à la ligne du titre
+.mobile-break {
+    display: none;
+}
+
+
+.cards__grid {
+    border-radius: 25px;
+    background-color: #F6F6F6;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
