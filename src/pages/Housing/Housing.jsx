@@ -6,7 +6,7 @@ import { Navigate , useParams } from 'react-router-dom';
 import Collapse from '../../components/Collapse/Collapse.jsx';
 import Slideshow from '../../components/Slideshow/Slideshow.jsx';
 import StarRating from '../../components/StarRating/StarRating.jsx';
-import Tags from '../../components/Tags/Tags.jsx';
+import Tags from '../../components/tags/Tags.jsx';
 
 // importations des fichiers annexes
 import data from '../../assets/logements.json';
